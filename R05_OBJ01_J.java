@@ -2,7 +2,11 @@
 // OBJ01-J. Limit accessibility of fields
 
 public class R05_OBJ01_J {
-    public int total; // Number of elements
+    private int total; // Number of elements, declared private
+
+    public int getTotal() {
+        return total;
+    }
 
     void add() {
         if (total < Integer.MAX_VALUE) {
